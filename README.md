@@ -1,3 +1,31 @@
+# Recip-O-Matic
+
+Recip-O-Matic is a small front-end application designed to help users discover and manage recipes. Users can search for recipes by ingredients or keywords, view a list of matching recipes, see detailed information for a specific recipe, and save their favorite recipes to a local list for easy access.
+
+## Features
+
+- **Recipe Search:** Search for recipes by entering ingredients or keywords.
+- **Recipe Listing:** View a list of matching recipes with basic details (name, short description, image).
+- **Detailed Recipe View:** Click on a recipe to view detailed information, including ingredients, instructions, and preparation time (where available).
+- **Favorite Recipes:** Save favorite recipes to a local list (stored in browser `localStorage`) for easy access.
+- **Responsive Design:** Works well on both desktop and mobile devices.
+- **Homepage Suggestions:** Displays a set of suggested recipe suggestions on the initial load of the homepage.
+
+## Tech Stack & Libraries
+
+- **Framework:** [Next.js](https://nextjs.org/) (with App Router) - A React framework for building full-stack web applications.
+- **Language:** [TypeScript](https://www.typescriptlang.org/) - For static typing and improved developer experience.
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
+- **State Management:**
+  - React Hooks (`useState`, `useEffect`, `useContext`, `useCallback`).
+  - Custom React Hook (`useLocalStorage`) for persisting data (favorites) in the browser's local storage.
+  - React Context API (`FavoritesContext`) for managing and providing access to favorite recipes globally.
+- **Icons:** [Lucide React](https://lucide.dev/) - A simply beautiful and consistent icon toolkit.
+- **Linting/Formatting:** ESLint & Prettier (typically configured by `create-next-app`).
+- **Testing:**
+  - [Jest](https://jestjs.io/) - JavaScript testing framework.
+  - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - For testing React components in a user-centric way.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
